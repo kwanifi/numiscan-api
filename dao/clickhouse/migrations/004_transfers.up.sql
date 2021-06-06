@@ -6,7 +6,9 @@ create table transfers
     trf_to         FixedString(45),
     trf_amount     Decimal128(18),
     trf_created_at DateTime,
-    trf_currency   String,
+    trf_currency   String
 ) ENGINE ReplacingMergeTree()
       PARTITION BY toYYYYMMDD(trf_created_at)
       ORDER BY (trf_id);
+
+drop table transfers;
