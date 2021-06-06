@@ -1,7 +1,7 @@
 {
   "api": {
-    "port": "8080",
-    "allowed_hosts": ["http://localhost:8080"]
+    "port": "443",
+    "allowed_hosts": ["https://numiscan.onrender.com:443"]
   },
   "mysql": {
     "host": "mysql-dgzr",
@@ -16,7 +16,7 @@
     "port": 8123,
     "user": "default",
     "password": "",
-    "database": "default"
+    "database": "numiscan"
   },
   "parser": {
     "node": "https://api.cosmos.network",
