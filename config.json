@@ -16,7 +16,7 @@
     "port": 8123,
     "user": "default",
     "password": "",
-    "database": "numiscan"
+    "database": "default"
   },
   "parser": {
     "node": "https://api.cosmos.network",
