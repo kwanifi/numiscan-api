@@ -10,5 +10,3 @@ create table transfers
 ) ENGINE ReplacingMergeTree()
       PARTITION BY toYYYYMMDD(trf_created_at)
       ORDER BY (trf_id);
-
-drop table transfers;
