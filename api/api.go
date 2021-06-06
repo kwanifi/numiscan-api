@@ -3,21 +3,22 @@ package api
 import (
 	"encoding/json"
 	"fmt"
-	"github.com/everstake/cosmoscan-api/config"
-	"github.com/everstake/cosmoscan-api/dao"
-	"github.com/everstake/cosmoscan-api/dmodels"
-	"github.com/everstake/cosmoscan-api/log"
-	"github.com/everstake/cosmoscan-api/services"
-	"github.com/gorilla/mux"
-	"github.com/gorilla/schema"
-	"github.com/rs/cors"
-	"github.com/urfave/negroni"
-	"go.uber.org/zap"
 	"io/ioutil"
 	"net/http"
 	"reflect"
 	"strconv"
 	"time"
+
+	"github.com/gorilla/mux"
+	"github.com/gorilla/schema"
+	"github.com/kwanifi/numiscan-api/config"
+	"github.com/kwanifi/numiscan-api/dao"
+	"github.com/kwanifi/numiscan-api/dmodels"
+	"github.com/kwanifi/numiscan-api/log"
+	"github.com/kwanifi/numiscan-api/services"
+	"github.com/rs/cors"
+	"github.com/urfave/negroni"
+	"go.uber.org/zap"
 )
 
 type API struct {

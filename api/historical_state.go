@@ -1,8 +1,9 @@
 package api
 
 import (
-	"github.com/everstake/cosmoscan-api/log"
 	"net/http"
+
+	"github.com/kwanifi/numiscan-api/log"
 )
 
 func (api *API) GetHistoricalState(w http.ResponseWriter, r *http.Request) {

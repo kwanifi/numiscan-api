@@ -1,4 +1,4 @@
-module github.com/everstake/cosmoscan-api
+module github.com/kwanifi/numiscan-api
 
 go 1.14
 

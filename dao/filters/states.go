@@ -1,6 +1,6 @@
 package filters
 
-import "github.com/everstake/cosmoscan-api/dmodels"
+import "github.com/kwanifi/numiscan-api/dmodels"
 
 type Stats struct {
 	Titles []string     `schema:"-"`

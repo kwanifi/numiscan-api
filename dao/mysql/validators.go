@@ -2,8 +2,9 @@ package mysql
 
 import (
 	"fmt"
+
 	"github.com/Masterminds/squirrel"
-	"github.com/everstake/cosmoscan-api/dmodels"
+	"github.com/kwanifi/numiscan-api/dmodels"
 )
 
 func (m DB) CreateValidators(validators []dmodels.Validator) error {

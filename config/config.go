@@ -8,18 +8,18 @@ import (
 )
 
 const (
-	ServiceName = "cosmoscan-api"
+	ServiceName = "numiscan-api"
 	configPath  = "./config.json"
 	Currency    = "atom"
 )
 
 type (
 	Config struct {
-		API                   API        `json:"api"`
-		Mysql                 Mysql      `json:"mysql"`
-		Clickhouse            Clickhouse `json:"clickhouse"`
-		Parser                Parser     `json:"parser"`
-		CMCKey                string     `json:"cmc_key"`
+		API        API        `json:"api"`
+		Mysql      Mysql      `json:"mysql"`
+		Clickhouse Clickhouse `json:"clickhouse"`
+		Parser     Parser     `json:"parser"`
+		CMCKey     string     `json:"cmc_key"`
 	}
 	Parser struct {
 		Node     string `json:"node"`

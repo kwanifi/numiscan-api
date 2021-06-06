@@ -2,9 +2,10 @@ package clickhouse
 
 import (
 	"fmt"
+
 	"github.com/Masterminds/squirrel"
-	"github.com/everstake/cosmoscan-api/dao/filters"
-	"github.com/everstake/cosmoscan-api/dmodels"
+	"github.com/kwanifi/numiscan-api/dao/filters"
+	"github.com/kwanifi/numiscan-api/dmodels"
 )
 
 func (db DB) CreateMissedBlocks(blocks []dmodels.MissedBlock) error {

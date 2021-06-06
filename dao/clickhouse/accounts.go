@@ -2,9 +2,10 @@ package clickhouse
 
 import (
 	"fmt"
+
 	"github.com/Masterminds/squirrel"
-	"github.com/everstake/cosmoscan-api/dao/filters"
-	"github.com/everstake/cosmoscan-api/dmodels"
+	"github.com/kwanifi/numiscan-api/dao/filters"
+	"github.com/kwanifi/numiscan-api/dmodels"
 )
 
 func (db DB) GetActiveAccounts(filter filters.ActiveAccounts) (addresses []string, err error) {
@@ -29,7 +30,7 @@ func (db DB) GetActiveAccounts(filter filters.ActiveAccounts) (addresses []strin
 		if !filter.To.IsZero() {
 			q = q.Where(squirrel.LtOrEq{item.dateField: filter.To})
 		}
-		qs = append(qs , q)
+		qs = append(qs, q)
 	}
 
 	q := qs[0]

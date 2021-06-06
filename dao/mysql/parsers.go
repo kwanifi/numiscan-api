@@ -2,7 +2,7 @@ package mysql
 
 import (
 	"github.com/Masterminds/squirrel"
-	"github.com/everstake/cosmoscan-api/dmodels"
+	"github.com/kwanifi/numiscan-api/dmodels"
 )
 
 func (m DB) GetParsers() (parsers []dmodels.Parser, err error) {

@@ -3,11 +3,12 @@ package node
 import (
 	"encoding/json"
 	"fmt"
-	"github.com/everstake/cosmoscan-api/config"
-	"github.com/shopspring/decimal"
 	"io/ioutil"
 	"net/http"
 	"time"
+
+	"github.com/kwanifi/numiscan-api/config"
+	"github.com/shopspring/decimal"
 )
 
 const (

@@ -2,10 +2,11 @@ package clickhouse
 
 import (
 	"fmt"
+
 	"github.com/Masterminds/squirrel"
-	"github.com/everstake/cosmoscan-api/dao/filters"
-	"github.com/everstake/cosmoscan-api/dmodels"
-	"github.com/everstake/cosmoscan-api/smodels"
+	"github.com/kwanifi/numiscan-api/dao/filters"
+	"github.com/kwanifi/numiscan-api/dmodels"
+	"github.com/kwanifi/numiscan-api/smodels"
 )
 
 func (db DB) CreateHistoricalStates(states []dmodels.HistoricalState) error {

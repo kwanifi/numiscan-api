@@ -4,10 +4,10 @@ services:
     restart: always
     ports:
       - "6000:6000"
-    container_name: cosmoscan-api
+    container_name: numiscan-api
     build: .
     volumes:
-      - ./:/cosmoscan-api
+      - ./:/numiscan-api
       - ~/.ssh:/root/.ssh
     logging:
       driver: "json-file"

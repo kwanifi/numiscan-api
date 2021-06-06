@@ -2,11 +2,12 @@ package services
 
 import (
 	"fmt"
-	"github.com/everstake/cosmoscan-api/dao/filters"
-	"github.com/everstake/cosmoscan-api/dmodels"
-	"github.com/everstake/cosmoscan-api/smodels"
-	"github.com/shopspring/decimal"
 	"time"
+
+	"github.com/kwanifi/numiscan-api/dao/filters"
+	"github.com/kwanifi/numiscan-api/dmodels"
+	"github.com/kwanifi/numiscan-api/smodels"
+	"github.com/shopspring/decimal"
 )
 
 func (s *ServiceFacade) GetAggDelegationsVolume(filter filters.DelegationsAgg) (items []smodels.AggItem, err error) {

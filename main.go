@@ -1,17 +1,18 @@
 package main
 
 import (
-	"github.com/everstake/cosmoscan-api/api"
-	"github.com/everstake/cosmoscan-api/config"
-	"github.com/everstake/cosmoscan-api/dao"
-	"github.com/everstake/cosmoscan-api/log"
-	"github.com/everstake/cosmoscan-api/services"
-	"github.com/everstake/cosmoscan-api/services/modules"
-	"github.com/everstake/cosmoscan-api/services/parser/hub3"
-	"github.com/everstake/cosmoscan-api/services/scheduler"
 	"os"
 	"os/signal"
 	"time"
+
+	"github.com/kwanifi/numiscan-api/api"
+	"github.com/kwanifi/numiscan-api/config"
+	"github.com/kwanifi/numiscan-api/dao"
+	"github.com/kwanifi/numiscan-api/log"
+	"github.com/kwanifi/numiscan-api/services"
+	"github.com/kwanifi/numiscan-api/services/modules"
+	"github.com/kwanifi/numiscan-api/services/parser/hub3"
+	"github.com/kwanifi/numiscan-api/services/scheduler"
 )
 
 func main() {

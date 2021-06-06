@@ -3,15 +3,16 @@ package services
 import (
 	"encoding/json"
 	"fmt"
-	"github.com/cosmos/cosmos-sdk/types"
-	"github.com/everstake/cosmoscan-api/dao/filters"
-	"github.com/everstake/cosmoscan-api/dmodels"
-	"github.com/everstake/cosmoscan-api/log"
-	"github.com/everstake/cosmoscan-api/services/node"
-	"github.com/everstake/cosmoscan-api/smodels"
-	"github.com/shopspring/decimal"
 	"strings"
 	"time"
+
+	"github.com/cosmos/cosmos-sdk/types"
+	"github.com/kwanifi/numiscan-api/dao/filters"
+	"github.com/kwanifi/numiscan-api/dmodels"
+	"github.com/kwanifi/numiscan-api/log"
+	"github.com/kwanifi/numiscan-api/services/node"
+	"github.com/kwanifi/numiscan-api/smodels"
+	"github.com/shopspring/decimal"
 )
 
 func (s *ServiceFacade) GetProposals(filter filters.Proposals) (proposals []dmodels.Proposal, err error) {

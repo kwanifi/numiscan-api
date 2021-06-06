@@ -1,9 +1,10 @@
 package api
 
 import (
-	"github.com/everstake/cosmoscan-api/dao/filters"
-	"github.com/everstake/cosmoscan-api/log"
 	"net/http"
+
+	"github.com/kwanifi/numiscan-api/dao/filters"
+	"github.com/kwanifi/numiscan-api/log"
 )
 
 func (api *API) GetProposals(w http.ResponseWriter, r *http.Request) {

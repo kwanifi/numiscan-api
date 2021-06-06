@@ -3,17 +3,18 @@ package mysql
 import (
 	"errors"
 	"fmt"
-	"github.com/Masterminds/squirrel"
-	"github.com/everstake/cosmoscan-api/config"
-	"github.com/everstake/cosmoscan-api/dao/derrors"
-	"github.com/everstake/cosmoscan-api/log"
-	"github.com/go-sql-driver/mysql"
-	_ "github.com/go-sql-driver/mysql"
-	"github.com/jmoiron/sqlx"
-	migrate "github.com/rubenv/sql-migrate"
 	"os"
 	"path/filepath"
 	"time"
+
+	"github.com/Masterminds/squirrel"
+	"github.com/go-sql-driver/mysql"
+	_ "github.com/go-sql-driver/mysql"
+	"github.com/jmoiron/sqlx"
+	"github.com/kwanifi/numiscan-api/config"
+	"github.com/kwanifi/numiscan-api/dao/derrors"
+	"github.com/kwanifi/numiscan-api/log"
+	migrate "github.com/rubenv/sql-migrate"
 )
 
 const migrationsDir = "./dao/mysql/migrations"

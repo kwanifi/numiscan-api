@@ -2,9 +2,10 @@ package filters
 
 import (
 	"fmt"
-	"github.com/Masterminds/squirrel"
-	"github.com/everstake/cosmoscan-api/dmodels"
 	"time"
+
+	"github.com/Masterminds/squirrel"
+	"github.com/kwanifi/numiscan-api/dmodels"
 )
 
 const (

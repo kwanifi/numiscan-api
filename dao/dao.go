@@ -2,15 +2,16 @@ package dao
 
 import (
 	"fmt"
-	"github.com/everstake/cosmoscan-api/config"
-	"github.com/everstake/cosmoscan-api/dao/cache"
-	"github.com/everstake/cosmoscan-api/dao/clickhouse"
-	"github.com/everstake/cosmoscan-api/dao/filters"
-	"github.com/everstake/cosmoscan-api/dao/mysql"
-	"github.com/everstake/cosmoscan-api/dmodels"
-	"github.com/everstake/cosmoscan-api/smodels"
-	"github.com/shopspring/decimal"
 	"time"
+
+	"github.com/kwanifi/numiscan-api/config"
+	"github.com/kwanifi/numiscan-api/dao/cache"
+	"github.com/kwanifi/numiscan-api/dao/clickhouse"
+	"github.com/kwanifi/numiscan-api/dao/filters"
+	"github.com/kwanifi/numiscan-api/dao/mysql"
+	"github.com/kwanifi/numiscan-api/dmodels"
+	"github.com/kwanifi/numiscan-api/smodels"
+	"github.com/shopspring/decimal"
 )
 
 type (

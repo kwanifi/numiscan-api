@@ -2,7 +2,7 @@ package filters
 
 import (
 	"github.com/Masterminds/squirrel"
-	"github.com/everstake/cosmoscan-api/dmodels"
+	"github.com/kwanifi/numiscan-api/dmodels"
 )
 
 type TimeRange struct {

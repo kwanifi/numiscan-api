@@ -4,15 +4,16 @@ import (
 	"crypto/sha1"
 	"encoding/hex"
 	"fmt"
-	"github.com/everstake/cosmoscan-api/dao/filters"
-	"github.com/everstake/cosmoscan-api/dmodels"
-	"github.com/everstake/cosmoscan-api/log"
-	"github.com/everstake/cosmoscan-api/services/node"
-	"github.com/everstake/cosmoscan-api/smodels"
-	"github.com/shopspring/decimal"
 	"math"
 	"sort"
 	"time"
+
+	"github.com/kwanifi/numiscan-api/dao/filters"
+	"github.com/kwanifi/numiscan-api/dmodels"
+	"github.com/kwanifi/numiscan-api/log"
+	"github.com/kwanifi/numiscan-api/services/node"
+	"github.com/kwanifi/numiscan-api/smodels"
+	"github.com/shopspring/decimal"
 )
 
 func (s *ServiceFacade) GetNetworkStates(filter filters.Stats) (map[string][]decimal.Decimal, error) {
@@ -73,8 +74,7 @@ func (s *ServiceFacade) MakeStats() {
 		{
 			title: dmodels.StatsTotalDelegators,
 			fetch: func() (value decimal.Decimal, err error) {
-				total, err := s.dao.GetDelegatorsTotal(filters.Delegators{
-				})
+				total, err := s.dao.GetDelegatorsTotal(filters.Delegators{})
 				if err != nil {
 					return value, fmt.Errorf("dao.GetDelegatorsTotal: %s", err.Error())
 				}

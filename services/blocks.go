@@ -2,8 +2,9 @@ package services
 
 import (
 	"fmt"
-	"github.com/everstake/cosmoscan-api/dao/filters"
-	"github.com/everstake/cosmoscan-api/smodels"
+
+	"github.com/kwanifi/numiscan-api/dao/filters"
+	"github.com/kwanifi/numiscan-api/smodels"
 	"github.com/shopspring/decimal"
 )
 

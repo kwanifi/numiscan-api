@@ -1,7 +1,7 @@
 package smodels
 
 import (
-	"github.com/everstake/cosmoscan-api/dmodels"
+	"github.com/kwanifi/numiscan-api/dmodels"
 	"github.com/shopspring/decimal"
 )
 

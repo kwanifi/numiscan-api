@@ -1,10 +1,11 @@
 package api
 
 import (
-	"github.com/everstake/cosmoscan-api/dao/filters"
-	"github.com/everstake/cosmoscan-api/log"
-	"github.com/gorilla/mux"
 	"net/http"
+
+	"github.com/gorilla/mux"
+	"github.com/kwanifi/numiscan-api/dao/filters"
+	"github.com/kwanifi/numiscan-api/log"
 )
 
 func (api *API) GetAggDelegationsVolume(w http.ResponseWriter, r *http.Request) {

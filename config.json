@@ -1,0 +1,27 @@
+{
+  "api": {
+    "port": "8080",
+    "allowed_hosts": ["http://localhost:8080"]
+  },
+  "mysql": {
+    "host": "mysql-dgzr",
+    "port": "3306",
+    "db": "numi",
+    "user": "numi",
+    "password": "secret"
+  },
+  "clickhouse": {
+    "protocol": "http",
+    "host": "clickhouse-vnks",
+    "port": 8123,
+    "user": "default",
+    "password": "",
+    "database": "default"
+  },
+  "parser": {
+    "node": "https://api.cosmos.network",
+    "batch": 500,
+    "fetchers": 5
+  },
+  "cmc_key": ""
+}

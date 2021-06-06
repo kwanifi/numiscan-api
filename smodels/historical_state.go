@@ -1,6 +1,6 @@
 package smodels
 
-import "github.com/everstake/cosmoscan-api/dmodels"
+import "github.com/kwanifi/numiscan-api/dmodels"
 
 type HistoricalState struct {
 	Current        dmodels.HistoricalState `json:"current"`

@@ -1,6 +1,6 @@
 package smodels
 
-import "github.com/everstake/cosmoscan-api/dmodels"
+import "github.com/kwanifi/numiscan-api/dmodels"
 
 type ProposalVote struct {
 	Title       string `json:"title"`

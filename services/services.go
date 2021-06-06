@@ -1,13 +1,13 @@
 package services
 
 import (
-	"github.com/everstake/cosmoscan-api/config"
-	"github.com/everstake/cosmoscan-api/dao"
-	"github.com/everstake/cosmoscan-api/dao/filters"
-	"github.com/everstake/cosmoscan-api/dmodels"
-	"github.com/everstake/cosmoscan-api/services/cmc"
-	"github.com/everstake/cosmoscan-api/services/node"
-	"github.com/everstake/cosmoscan-api/smodels"
+	"github.com/kwanifi/numiscan-api/config"
+	"github.com/kwanifi/numiscan-api/dao"
+	"github.com/kwanifi/numiscan-api/dao/filters"
+	"github.com/kwanifi/numiscan-api/dmodels"
+	"github.com/kwanifi/numiscan-api/services/cmc"
+	"github.com/kwanifi/numiscan-api/services/node"
+	"github.com/kwanifi/numiscan-api/smodels"
 	"github.com/shopspring/decimal"
 )
 

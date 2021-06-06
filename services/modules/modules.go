@@ -2,10 +2,11 @@ package modules
 
 import (
 	"fmt"
-	"github.com/everstake/cosmoscan-api/log"
 	"os"
 	"sync"
 	"time"
+
+	"github.com/kwanifi/numiscan-api/log"
 )
 
 var gracefulTimeout = time.Second * 5
